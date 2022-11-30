@@ -62,6 +62,27 @@ footer.container {
     transition: 0.5s;
 }
 
+.bottom {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    color: #fffc;
+}
+
+.bottom > .logo {
+    margin-bottom: 40px;
+}
+
+.bottom > .trio {
+    display: flex;
+    gap: 20px;
+}
+
+.bottom a {
+    color: #fff;
+}
+
 .socials > a:hover {
     background-color: #fff;
     color: var(--main-color);
@@ -71,8 +92,4 @@ footer.container {
     .main-title {
         font-size: 60px;
     }
-}
-
-.bottom {
-
 }
