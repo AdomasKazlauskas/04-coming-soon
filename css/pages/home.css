@@ -83,11 +83,10 @@ footer.container {
     position: relative;
 }
 
-
 .bottom > .trio > p + p::before {
     content: '';
     display: inline-block;
-    width: 1px;
+    width: 2px;
     height: 16px;
     background-color: #fff;
     position: absolute;
@@ -110,5 +109,8 @@ footer.container {
     }
     .bottom > .trio {
         flex-direction: column;
+    }
+    .bottom > .trio > p + p::before {
+        display: none;
     }
 }
