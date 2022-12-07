@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="./css/components/progress-bar.css">
     <link rel="stylesheet" href="./css/components/clock.css">
     <link rel="stylesheet" href="./css/components/mouse.css">
+    <link rel="stylesheet" href="./css/components/form.css">
+    <link rel="stylesheet" href="./css/components/button.css">
     <!-- pages -->
     <link rel="stylesheet" href="./css/pages/home.css">
 </head>
@@ -92,6 +94,23 @@
             <div class="column right">
                 <h2 class="section-title">Have any question?</h2>
                 <p class="section-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi quae necessitatibus fuga id hic blanditiis ab ratione. Quod ipsum harum amet, <a href="mailto:vardenis@pastenis.lt">vardenis@pastenis.lt</a>, perferendis sed consectetur, velit commodi cupiditate?</p>
+                <form action="/">
+                    <div class="cell-1">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" placeholder="Your name..." required>
+                    </div>
+                    <div class="cell-1">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="Your email..." required>
+                    </div>
+                    <div class="cell-2">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+                    </div>
+                    <div class="cell-2">
+                        <button class="btn">Send message</button>
+                    </div>
+                </form>
             </div>
         </div>
 
