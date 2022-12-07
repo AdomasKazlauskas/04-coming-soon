@@ -25,6 +25,7 @@ Design: [Happy weekend](https://cdn.discordapp.com/attachments/10441451322214973
 -   CSS animation
 -   form
 -   FontAwesome icons
+-   CSS units: vh, vw, vmin, vmax
 
 ## 🧰 Getting Started
 

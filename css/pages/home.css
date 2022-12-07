@@ -1,4 +1,14 @@
-.container > .hero {
+.container.hero {
+    background-image: url(../../img/background.png);
+    background-color: var(--main-color);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.container.hero > .short-row {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,13 +51,17 @@ footer.container {
     padding-top: 0;
 }
 
-.row.socials {
-    justify-content: center;
-    gap: 1em;
+footer.container > .row {
+    border-bottom: 1px solid #fff;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     margin-bottom: 2em;
-    border-bottom: 1px solid #fff;
+    justify-content: center;
+    position: relative;
+}
+.row .socials {
+    justify-content: center;
+    gap: 1em;
     font-size: 20px;
 }
 
@@ -60,6 +74,27 @@ footer.container {
     text-decoration: none;
     border-radius: 50%;
     transition: 0.5s;
+}
+
+.back-to-top {
+    background-color: var(--secondary-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    right: -15px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.back-to-top:hover {
+    box-shadow: 0 3px 6px #000300;
 }
 
 .bottom {
@@ -83,11 +118,10 @@ footer.container {
     position: relative;
 }
 
-
 .bottom > .trio > p + p::before {
     content: '';
     display: inline-block;
-    width: 1px;
+    width: 2px;
     height: 16px;
     background-color: #fff;
     position: absolute;
@@ -110,5 +144,8 @@ footer.container {
     }
     .bottom > .trio {
         flex-direction: column;
+    }
+    .bottom > .trio > p + p::before {
+        display: none;
     }
 }
